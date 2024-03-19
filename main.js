@@ -13,3 +13,15 @@ function sumTwoSmallestNumbers(numbers) {
   let newArr = numbers.sort((a, b) => a - b)
   return newArr[0] + newArr[1]
 }
+
+
+//Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+//The output should be two capital letters with a dot separating them.
+//It should look like this:
+//Sam Harris => S.H
+//patrick feeney => P.
+
+function abbrevName(name){
+  let [fname, lname] = name.toUpperCase().split(" ")
+  return `${fname[0]}.${lname[0]}`
+}
