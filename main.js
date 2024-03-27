@@ -151,3 +151,14 @@ function lovefunc(flower1, flower2){
 function lovefunc(flower1, flower2){
   return flower1 % 2 !== flower2 % 2;
 }
+
+
+// 3.27 8
+// Debugging sayHello function
+// The starship Enterprise has run into some problem when creating a program to greet everyone as they come aboard. It is your job to fix the code and get the program working again!
+// Example output:
+// Hello, Mr. Spock
+
+function sayHello(name) {
+  return `Hello, ${name}` 
+}
