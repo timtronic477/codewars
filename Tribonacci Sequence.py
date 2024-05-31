@@ -28,3 +28,11 @@ def tribonacci(signature, n):
             sum = new_arr[-3] + new_arr[-2] + new_arr[-1]
             new_arr.append(sum)
         return new_arr
+
+
+# top solution
+
+def tribonacci(signature, n):
+  res = signature[:n]
+  for i in range(n - 3): res.append(sum(res[-3:]))
+  return res
